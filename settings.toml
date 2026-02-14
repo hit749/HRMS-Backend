@@ -1,0 +1,8 @@
+[dev]
+debug = true
+
+#DATABASE SETTINGS
+DB_HOST = "hrms.kt85gff.mongodb.net"
+DATA_DB_USERNAME = "admin"
+DATA_DB_PASSWORD = "admin"
+DATA_DB_NAME = "hrms"
