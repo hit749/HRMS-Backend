@@ -10,7 +10,7 @@ dbpassword = settings["DATA_DB_PASSWORD"]
 dbname = settings["DATA_DB_NAME"]
 
 client = connect(
-    host="mongodb+srv://admin:admin@hrms.kt85gff.mongodb.net/hrms?retryWrites=true&w=majority",
+    host=f"mongodb+srv://{dbusername}:{dbpassword}@{dbhost}/{dbname}?retryWrites=true&w=majority",
     tls=True,
     tlsCAFile=certifi.where(),
     tlsAllowInvalidCertificates=True
